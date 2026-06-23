@@ -1,0 +1,8 @@
+{
+  "name": "jaimie-pmu",
+  "version": "1.0.0",
+  "description": "Site web officiel de Jaimie PMU Artist - Dermopigmentation Cugnaux",
+  "scripts": {
+    "dev": "npx live-server --port=3002 ."
+  }
+}
