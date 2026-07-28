@@ -108,7 +108,8 @@
         <div class="contact-form-wrapper reveal delay-1">
           <h3>Formulaire de Demande</h3>
           <p>Précisez votre projet de dermopigmentation pour une étude rapide.</p>
-            <form name="pmu-contact-form" netlify hidden>
+          <form name="pmu-contact-form" method="POST" data-netlify="true" hidden>
+            <input type="hidden" name="form-name" value="pmu-contact-form">
             <input type="text" name="name">
             <input type="tel" name="phone">
             <input type="email" name="email">
