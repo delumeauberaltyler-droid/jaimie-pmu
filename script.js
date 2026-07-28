@@ -235,27 +235,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- DEMO CONTACT FORM SUBMISSION ---
-  const contactForm = document.getElementById('pmu-contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+  // --- CONTACT FORM SUBMISSION ---
+const contactForm = document.getElementById('pmu-contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
       e.preventDefault();
-      
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const prestation = document.getElementById('prestation').value;
-      const message = document.getElementById('message').value.trim();
+      alert('Veuillez remplir tous les champs obligatoires (Nom, Email et Message).');
+      return;
+    }
 
-      if (!name || !email || !message) {
-        alert('Veuillez remplir tous les champs obligatoires (Nom, Email et Message).');
-        return;
-      }
-
-      // Show beautiful success notification (mock)
-      alert(`Merci pour votre demande ${name} !\n\nVotre demande d'information pour la prestation "${prestation}" a bien été enregistrée (mode démonstration).\n\nJaimie vous recontactera sous 24h.`);
-      contactForm.reset();
-    });
-  }
+  });
+}
 
 });
