@@ -109,21 +109,22 @@
           <h3>Formulaire de Demande</h3>
           <p>Précisez votre projet de dermopigmentation pour une étude rapide.</p>
           
-          <form id="pmu-contact-form" name="pmu-contact-form" data-netlify="true">
+          <form id="pmu-contact-form" name="pmu-contact-form" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="pmu-contact-form">
             <div class="form-row">
               <div class="form-group-sub">
                 <label for="name" class="form-label-sub">Nom complet *</label>
-                <input type="text" id="name" class="form-input-sub" placeholder="Ex. Marie Dupont" required>
+            <input type="text" id="name" name="name" class="form-input-sub" placeholder="Ex. Marie Dupont" required>
               </div>
               <div class="form-group-sub">
                 <label for="phone" class="form-label-sub">Téléphone</label>
-                <input type="tel" id="phone" class="form-input-sub" placeholder="Ex. 06 12 34 56 78">
+                <input type="tel" id="phone" name="phone" class="form-input-sub" placeholder="Ex. 06 12 34 56 78">
               </div>
             </div>
 
             <div class="form-group-sub">
               <label for="email" class="form-label-sub">Adresse e-mail *</label>
-              <input type="email" id="email" class="form-input-sub" placeholder="Ex. marie@example.com" required>
+              <input type="email" id="email" name="email" class="form-input-sub" placeholder="Ex. marie@example.com" required>
             </div>
 
             <div class="form-group-sub">
