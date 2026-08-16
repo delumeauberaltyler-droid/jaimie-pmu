@@ -4,8 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prestations & Tarifs | Jaimie PMU Artist</title>
-  <meta name="description" content="Découvrez nos prestations de maquillage permanent à Cugnaux : Brazilian Shadow, Microshading et Candy Lips. Détails des soins, durées et tarifs complets.">
+  <meta name="description" content="Découvrez nos prestations de maquillage permanent à Cugnaux : Brazilian Shadow, Candy Lips, Dark Lips et Ombré Lips. Détails des soins et tarifs.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .pricing-category .pricing-name {
+      text-align: center;
+      padding-top: 24px;
+      padding-bottom: 12px;
+    }
+
+    .pricing-category .pricing-name h4 {
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+    }
+
+    .pricing-category .pricing-duration {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .pricing-category .pricing-name {
+        text-align: center;
+      }
+    }
+  </style>
+
 </head>
 <body>
 
@@ -86,49 +109,13 @@
 
             <div class="presta-price">
               Création sur-mesure
-              <span>250 €</span>
+              <span>200 €</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Prestation 2: Microshading -->
-      <div id="microshading" class="presta-item reveal">
-        <div class="grid-2" style="align-items: stretch;">
-          <div class="presta-content">
-            <span class="presta-tag">Dermopigmentation Sourcils</span>
-            <h3>Microshading</h3>
-            <p class="presta-desc">La technique du Microshading crée un effet d'ombrage poudré similaire à un maquillage au crayon très estompé. Idéal pour combler des sourcils clairsemés ou masquer des asymétries légères. Elle apporte une densité homogène tout en préservant le naturel du regard.</p>
-            
-            <div class="presta-info-grid">
-              <div class="presta-info-box">
-                <h4>Type de peau</h4>
-                <p>Idéal peaux mixtes à grasses</p>
-              </div>
-              <div class="presta-info-box">
-                <h4>Durée de la séance</h4>
-                <p>Environ 2h00</p>
-              </div>
-              <div class="presta-info-box">
-                <h4>Tenue estimée</h4>
-                <p>12 à 15 mois</p>
-              </div>
-              <div class="presta-info-box">
-                <h4>Cicatrisation</h4>
-                <p>7 à 10 jours</p>
-              </div>
-            </div>
 
-            <div class="presta-price">
-              Création sur-mesure
-              <span>230 €</span>
-            </div>
-          </div>
-          <div class="presta-img">
-            <img src="images/microshading.jpg" alt="Sourcils parfaitement dessinés en Microshading">
-          </div>
-        </div>
-      </div>
 
       <!-- Prestation 3: Candy Lips -->
       <div id="candy-lips" class="presta-item reveal">
@@ -162,7 +149,7 @@
 
             <div class="presta-price">
               Création sur-mesure
-              <span>280 €</span>
+              <span>200 €</span>
             </div>
           </div>
         </div>
@@ -182,63 +169,119 @@
 
       <div class="pricing-section reveal">
         <table class="pricing-table">
-          <!-- Sourcils -->
-          <tr class="pricing-row">
-            <td class="pricing-name">
-              <h4>Brazilian Shadow (Création)</h4>
-              <p>Tracé morphologique + première pigmentation</p>
+          <!-- SOURCILS -->
+          <tr class="pricing-row pricing-category">
+            <td colspan="3" class="pricing-name">
+              <h4>SOURCILS</h4>
             </td>
-            <td class="pricing-duration">2h30</td>
-            <td class="pricing-value">250 €</td>
           </tr>
+
           <tr class="pricing-row">
             <td class="pricing-name">
-              <h4>Microshading (Création)</h4>
-              <p>Effet poudré pixelisé sur l'ensemble de la ligne</p>
+              <h4>Brazilian Shadow</h4>
             </td>
-            <td class="pricing-duration">2h00</td>
-            <td class="pricing-value">230 €</td>
+            <td class="pricing-duration"></td>
+            <td class="pricing-value">200 €</td>
           </tr>
+
           <tr class="pricing-row">
             <td class="pricing-name">
-              <h4>Retouche Fixatrice (à 1 mois)</h4>
-              <p>Fixation des pigments et ajustement final des sourcils</p>
+              <h4>Retouche fixatrice 4/6 semaines</h4>
             </td>
-            <td class="pricing-duration">1h00</td>
+            <td class="pricing-duration"></td>
             <td class="pricing-value">50 €</td>
           </tr>
-          
-          <!-- Lèvres -->
+
           <tr class="pricing-row">
             <td class="pricing-name">
-              <h4>Candy Lips (Création)</h4>
-              <p>Contour flouté & voile de couleur 3D sur les lèvres</p>
+              <h4>Retouche annuelle</h4>
             </td>
-            <td class="pricing-duration">2h45</td>
+            <td class="pricing-duration"></td>
+            <td class="pricing-value">150 €</td>
+          </tr>
+
+          <tr class="pricing-row">
+            <td class="pricing-name">
+              <h4>Remover (par séance) détatouage</h4>
+            </td>
+            <td class="pricing-duration"></td>
+            <td class="pricing-value">100 €</td>
+          </tr>
+
+          <tr class="pricing-row">
+            <td class="pricing-name">
+              <h4>Browlift + restructuration + teinture</h4>
+            </td>
+            <td class="pricing-duration"></td>
+            <td class="pricing-value">50 €</td>
+          </tr>
+
+          <tr class="pricing-row">
+            <td class="pricing-name">
+              <h4>Épilation (restructuration)</h4>
+            </td>
+            <td class="pricing-duration"></td>
+            <td class="pricing-value">20 €</td>
+          </tr>
+
+          <!-- LÈVRES -->
+          <tr class="pricing-row pricing-category">
+            <td colspan="3" class="pricing-name">
+              <h4>LÈVRES</h4>
+            </td>
+          </tr>
+
+          <tr class="pricing-row">
+            <td class="pricing-name">
+              <h4>Candy Lips</h4>
+            </td>
+            <td class="pricing-duration"></td>
+            <td class="pricing-value">200 €</td>
+          </tr>
+
+          <tr class="pricing-row">
+            <td class="pricing-name">
+              <h4>Dark Lips (lèvres foncées)</h4>
+            </td>
+            <td class="pricing-duration"></td>
+            <td class="pricing-value">200 €</td>
+          </tr>
+
+          <tr class="pricing-row">
+            <td class="pricing-name">
+              <h4>Ombré Lips</h4>
+            </td>
+            <td class="pricing-duration"></td>
             <td class="pricing-value">280 €</td>
           </tr>
+
           <tr class="pricing-row">
             <td class="pricing-name">
-              <h4>Retouche Fixatrice Lèvres (à 1 mois)</h4>
-              <p>Ajustement de l'intensité de la couleur des lèvres</p>
+              <h4>Retouche Candy Lips 4/6 sem</h4>
             </td>
-            <td class="pricing-duration">1h15</td>
-            <td class="pricing-value">50 €</td>
+            <td class="pricing-duration"></td>
+            <td class="pricing-value">80 €</td>
           </tr>
-          
-          <!-- Entretien -->
-          <tr class="pricing-row" id="retouches">
+
+          <tr class="pricing-row">
             <td class="pricing-name">
-              <h4>Retouche Entretien Annuel</h4>
-              <p>Ravivage des pigments (clientes Jaimie PMU uniquement, entre 10 et 18 mois)</p>
+              <h4>Retouche Dark Lips 6/8 sem</h4>
             </td>
-            <td class="pricing-duration">1h30</td>
+            <td class="pricing-duration"></td>
+            <td class="pricing-value">100 €</td>
+          </tr>
+
+          <tr class="pricing-row">
+            <td class="pricing-name">
+              <h4>Retouche annuelle</h4>
+            </td>
+            <td class="pricing-duration"></td>
             <td class="pricing-value">150 €</td>
           </tr>
         </table>
       </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -264,7 +307,6 @@
           <h4 class="footer-heading">Prestations</h4>
           <ul class="footer-links">
             <li><a href="prestations.html#brazilian-shadow">Brazilian Shadow</a></li>
-            <li><a href="prestations.html#microshading">Microshading Sourcils</a></li>
             <li><a href="prestations.html#candy-lips">Candy Lips Lèvres</a></li>
             <li><a href="prestations.html#retouches">Retouches annuelles</a></li>
           </ul>
